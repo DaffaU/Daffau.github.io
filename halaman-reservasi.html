@@ -1,0 +1,139 @@
+<!-- Halaman Reservasi -->
+<section id="reservation-page" class="reservation-page">
+    <div class="reservation-container">
+      <h2>Formulir Reservasi</h2>
+      <form id="reservation-form">
+        <div class="form-group">
+          <label for="nik">NIK:</label>
+          <input type="text" id="nik" name="nik" required placeholder="Masukkan NIK Anda" maxlength="16">
+        </div>
+  
+        <div class="form-group">
+          <label for="name">Nama:</label>
+          <input type="text" id="name" name="name" required placeholder="Masukkan Nama Anda">
+        </div>
+  
+        <div class="form-group">
+          <label for="dob">Tempat, Tanggal Lahir:</label>
+          <input type="text" id="dob" name="dob" required placeholder="Contoh: Jakarta, 01-01-1990">
+        </div>
+  
+        <div class="form-group">
+          <label for="gender">Jenis Kelamin:</label>
+          <select id="gender" name="gender" required>
+            <option value="male">Laki-laki</option>
+            <option value="female">Perempuan</option>
+          </select>
+        </div>
+  
+        <div class="form-group">
+          <label for="address">Alamat:</label>
+          <textarea id="address" name="address" required placeholder="Masukkan Alamat Anda"></textarea>
+        </div>
+  
+        <div class="form-group">
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required placeholder="Masukkan Email Anda">
+        </div>
+  
+        <div class="form-group">
+          <label for="date">Tanggal Reservasi:</label>
+          <input type="date" id="date" name="date" required>
+        </div>
+  
+        <div class="form-group">
+          <label for="time">Waktu Reservasi:</label>
+          <input type="time" id="time" name="time" required>
+        </div>
+  
+        <div class="form-group">
+          <button type="submit" id="submit-btn">Kirim Reservasi</button>
+        </div>
+      </form>
+    </div>
+  </section>
+  
+  <style>
+    .reservation-page {
+      padding: 20px;
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+    }
+  
+    .reservation-container {
+      max-width: 600px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: white;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+  
+    h2 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+  
+    .form-group {
+      margin-bottom: 15px;
+    }
+  
+    .form-group label {
+      display: block;
+      font-size: 14px;
+      margin-bottom: 5px;
+    }
+  
+    .form-group input, .form-group select, .form-group textarea {
+      width: 100%;
+      padding: 10px;
+      font-size: 14px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+  
+    .form-group textarea {
+      resize: vertical;
+      min-height: 100px;
+    }
+  
+    #submit-btn {
+      width: 100%;
+      padding: 12px;
+      background-color: #4CAF50;
+      color: white;
+      font-size: 16px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+  
+    #submit-btn:hover {
+      background-color: #45a049;
+      transform: scale(1.05);
+    }
+  </style>
+  
+  <script>
+    document.getElementById('reservation-form').addEventListener('submit', function(event) {
+      event.preventDefault();
+  
+      // Mengambil data form
+      const nik = document.getElementById('nik').value;
+      const name = document.getElementById('name').value;
+      const dob = document.getElementById('dob').value;
+      const gender = document.getElementById('gender').value;
+      const address = document.getElementById('address').value;
+      const email = document.getElementById('email').value;
+      const date = document.getElementById('date').value;
+      const time = document.getElementById('time').value;
+  
+      // Menampilkan data reservasi di konsol (untuk pengujian)
+      console.log(`NIK: ${nik}, Nama: ${name}, DOB: ${dob}, Gender: ${gender}, Alamat: ${address}, Email: ${email}, Tanggal: ${date}, Waktu: ${time}`);
+  
+      // Tindakan setelah form disubmit (misalnya, kirim data ke server atau beri pesan sukses)
+      alert('Reservasi Anda telah dikirim!');
+    });
+  </script>
+  

@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Kemenkes RS Hasan Sadikin</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+
+<body>
+  <header>
+    <div class="logo">
+      <img src="logoskt-removebg-preview.png" alt="Berger Hut Logo">
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#home">Beranda</a></li>
+        <li><a href="#about">Tentang</a></li>
+        <li><a href="#menu">Fasilitas</a></li>
+        <li><a href="#reservations">Reservasi</a></li>
+        <li><a href="#contact">Kontak</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="home" class="hero">
+    <div class="hero-content">
+      <h1>Kemenkes RS Hasan Sadikin</h1>
+      <a href="#menu" class="btn">Fasilitas Yang Tersedia</a>
+    </div>
+  </section>
+
+  <section id="about" class="about dark-theme">
+    <div class="about-content">
+      <h2>Tentang RS Hasan Sadikin</h2>
+      <p> Rumah Sakit Dr. Hasan Sadikin Bandung dibangun pada tahun 1920 dan diresmikan pada tanggal 15 Oktober 1923 dengan nama “Het Algemeene Bandoengsche Ziekenhuijs“. Pada tanggal 30 April 1927 namanya diubah menjadi “Het Gemeente Ziekenhuijs Juliana” dengan kapasitas 300 tempat tidur.Selama penjajahan Jepang, rumah sakit ini dijadikan Rumah Sakit Militer. Setelah Indonesia merdeka, dikelola oleh pemerintah daerah, yang dikenal oleh masyarakat Jawa Barat dengan nama “Rumah Sakit Ranca Badak“. Pada tahun 1954 Rumah Sakit Ranca Badak ditetapkan menjadi rumah sakit propinsi dan berada di bawah pengawasan Departemen Kesehatan.</p>
+      <p>Selanjutnya pada tahun 1956 dijadikan rumah sakit umum dengan kapasitas 600 tempat tidur, bersamaan dengan didirikannya Fakultas Kedokteran Universitas Padjadjaran. Sejak itu pula Rumah Sakit Ranca Badak digunakan sebagai tempat pendidikan oleh Fakultas Kedokteran Universitas Padjadjaran dan merupakan awal kerjasama antara Rumah Sakit Ranca Badak dengan Fakultas Kedokteran Universitas Padjadjaran.</p>
+      <p> Pada tanggal 8 Oktober 1967 nama Rumah Sakit Ranca Badak diubah menjadi Rumah Sakit Umum Pusat Dr. Hasan Sadikin (RSHS) yang berfungsi sebagai Unit Pelaksana Teknis (UPT) Departemen Kesehatan Republik Indonesia dan bertanggungjawab langsung kepada Direktur Jenderal Pelayanan Medik. Pada tahun 1992-1997 RSHS ditetapkan menjadi unit swadana. Keluarnya Undang-undang nomor 20 tahun 1997 tentang PNBP yang ditindaklanjuti dengan Surat Keputusan Menteri Keuangan nomor 124 tahun 1997 menyebabkan status RSHS berubah menjadi Rumah Sakit Pengguna Pendapatan Negara Bukan Pajak (PNBP) yang harus menyetorkan seluruh pendapatan ke kas negara.</p>
+    </div>
+    <div class="about-image">
+      <img src="rmhskt.png" alt="About Image">
+    </div>
+  </section>
+
+  <section id="menu" class="menu">
+    <h2>FASILITAS YANG TERSEDIA</h2>
+    <div class="menu-items">
+      <div class="menu-item">
+        <img src="ctscan.png" alt="Burger 1">
+        <h3>CT SCAN</h3>
+        <p>CT Scan adalah salah satu peralatan radiodiagnostik dengan menggunakan sinar-x. pada dasarnya gambar yang dihasilkan merupakan pemetaan dari penyerapan objek terhadap sinar-x</p>
+      </div>
+      <div class="menu-item">
+        <img src="mri.png" alt="Burger 2">
+        <h3>MRI</h3>
+        <p>Magnetic Resonance Imaging (MRI) adalah suatu teknik yang digunakan untuk menghasilkan gambaran organ dalam pada organisme hidup, juga untuk menemukan jumlah kandungan air dalam struktur geologi. Biasa digunakan untuk menggambarkan secara patologi atau perubahan fisiologi otot hidup. Pada pengobatan, MRI digunakan untuk membedakan otot patologi seperti tumor otak dibandingkan otot normal.</p>
+      </div>
+      <div class="menu-item">
+        <img src="linac.jpg" alt="Burger 3">
+        <h3>LINAC</h3>
+        <p>Alat ini membantu proses  pengobatan radiasi dengan sumber radiasi mempunyai jarak dengan target yang dituju atau berada diluar tubuh. Sumber yang dipakai adalah sinar X atau photon yang merupakan pancaran gelombang elektromagnetik yang dikeluarkan oleh pesawat liner akselerator (LINAC).</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="reservations" class="reservations">
+    <div class="reservation-form">
+      <h2>Buat Reservasi</h2>
+      <button id="reservation-btn">Buat Reservasi</button>
+    </div>
+  </section>
+  
+  <style>
+    #reservation-btn {
+      padding: 10px 20px;
+      background-color: #4CAF50;
+      color: white;
+      font-size: 16px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+  
+    #reservation-btn:hover {
+      background-color: #45a049;
+      transform: scale(1.05);
+    }
+  </style>
+  
+  <script>
+    document.getElementById('reservation-btn').addEventListener('click', function() {
+      window.location.href = 'halaman-reservasi.html'; // Ganti dengan URL halaman yang dituju
+    });
+  </script>
+  
+
+  <section id="testimonials" class="testimonials">
+    <h2>Review Pasien</h2>
+    <div class="testimonial">
+      <img src="customer1.jpg" alt="Customer 1">
+      <p>"Pelayanan yang sangat ramah dan profesional!"</p>"
+        <p>Saya sangat puas dengan pelayanan RS Hasan Sadikin. Dokternya sangat komunikatif, dan perawatnya sabar membantu. Fasilitasnya juga bersih dan nyaman. Terima kasih atas pelayanannya!</p>
+      <h4>- Fathur Rahman</h4>
+    </div>
+    <div class="testimonial">
+      <img src="customer1.jpg" alt="Customer 2">
+      <p>"RS Hasan Sadikin menyediakan fasilitas medis yang sangat lengkap dan modern"</p>
+      <p>Terdapat ruang ICU, NICU, laboratorium, dan ruang operasi yang dilengkapi dengan teknologi terkini, sehingga pasien dapat merasakan pelayanan kesehatan yang optimal."</p>
+      <h4>- Raihan Priyatna</h4>
+    </div>
+  </section>
+
+  <section id="gallery" class="gallery">
+    <h2>Galeri</h2>
+    <div class="image-grid">
+      <div class="image-item">
+        <img src="ID.BDG.HOS.DRHS_2.jpg" alt="Image 1">
+      </div>
+      <div class="image-item">
+        <img src="f2.jpg" alt="Image 2">
+      </div>
+      <div class="image-item">
+        <img src="f3.jpg" alt="Image 3">
+      </div>
+      <div class="image-item">
+        <img src="f4.jpg" alt="Image 4">
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <div class="contact-container">
+      <h2>Kontak</h2>
+      <div class="contact-info">
+        <div class="info-item">
+          <i class="fas fa-map-marker-alt"></i>
+          <p>Jl. Pasteur No. 38 Bandung</p>
+        </div>
+        <div class="info-item">
+          <i class="fas fa-phone-alt"></i>
+          <p>(022)2551111</p>
+        </div>
+        <div class="info-item">
+          <i class="fas fa-envelope"></i>
+          <p>tatausaharshs2@gmail.com</p>
+        </div>
+      </div>
+      <form class="contact-form">
+        <input type="text" name="name" placeholder="Nama Anda" required>
+        <input type="email" name="email" placeholder="Email Anda" required>
+        <textarea name="message" placeholder="Pesan Anda" rows="5" required></textarea>
+        <button type="submit">Kirim Pesan</button>
+      </form>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-logo">
+        <img src="logoskt-removebg-preview.png" alt="Logo">
+      </div>
+      <nav class="footer-links">
+        <a href="#home">Beranda</a>
+        <a href="#about">Tentang</a>
+        <a href="#menu">Fasilitas</a>
+        <a href="#reservations">Reservasi</a>
+        <a href="#testimonials">Review</a>
+        <a href="#gallery">Galeri</a>
+        <a href="#contact">Kontak</a>
+      </nav>
+      <div class="footer-social">
+        <a href="#"><i class="fab fa-facebook"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+      </div>
+    </div>
+
+    <p class="footer-text">&copy; 2025 RS Hasan Sadikin.</p>
+  </footer>
+  <!-- Tambahkan di dalam <body> sebelum penutup </body> -->
+<div id="chatbot-container">
+  <div id="chatbot-popup" class="hidden">
+      <div class="chatbot-header">
+          <h3>AI Assistant</h3>
+          <button id="close-chatbot">×</button>
+      </div>
+      <div id="chatbot-messages" class="chatbot-messages"></div>
+      <div class="chatbot-input">
+          <input type="text" id="chatbot-input" placeholder="Tanya sesuatu...">
+          <button id="send-chatbot-message">Kirim</button>
+      </div>
+  </div>
+  <button id="open-chatbot">💬</button>
+</div>
+
+<style>
+  #chatbot-container {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      z-index: 1000;
+  }
+
+  #chatbot-popup {
+      width: 350px;
+      height: 500px;
+      background-color: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+      display: flex;
+      flex-direction: column;
+      transition: all 0.3s ease;
+  }
+
+  .hidden {
+      display: none !important;
+  }
+
+  #open-chatbot {
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      font-size: 30px;
+      cursor: pointer;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+      transition: all 0.3s ease;
+  }
+
+  #open-chatbot:hover {
+      transform: scale(1.1);
+  }
+
+  .chatbot-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #4CAF50;
+      color: white;
+      padding: 10px;
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px;
+  }
+
+  .chatbot-messages {
+      flex-grow: 1;
+      overflow-y: auto;
+      padding: 15px;
+      background-color: #f4f4f4;
+  }
+
+  .chatbot-input {
+      display: flex;
+      padding: 10px;
+      background-color: white;
+      border-bottom-left-radius: 10px;
+      border-bottom-right-radius: 10px;
+  }
+
+  #chatbot-input {
+      flex-grow: 1;
+      padding: 10px;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      margin-right: 10px;
+  }
+
+  #send-chatbot-message {
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      padding: 10px 15px;
+      border-radius: 5px;
+      cursor: pointer;
+  }
+
+  .bot-message, .user-message {
+      max-width: 80%;
+      margin: 10px 0;
+      padding: 10px;
+      border-radius: 10px;
+  }
+
+  .bot-message {
+      background-color: #e6f2ff;
+      align-self: flex-start;
+  }
+
+  .user-message {
+      background-color: #dcf8c6;
+      align-self: flex-end;
+      margin-left: auto;
+  }
+</style>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  const openChatbot = document.getElementById('open-chatbot');
+  const closeChatbot = document.getElementById('close-chatbot');
+  const chatbotPopup = document.getElementById('chatbot-popup');
+  const chatbotMessages = document.getElementById('chatbot-messages');
+  const chatbotInput = document.getElementById('chatbot-input');
+  const sendChatbotMessage = document.getElementById('send-chatbot-message');
+
+  // Fungsi untuk menambah pesan
+  function addMessage(message, type) {
+      const messageElement = document.createElement('div');
+      messageElement.classList.add(type + '-message');
+      messageElement.textContent = message;
+      chatbotMessages.appendChild(messageElement);
+      chatbotMessages.scrollTop = chatbotMessages.scrollHeight;
+  }
+
+  // Fungsi untuk menangani respon AI sederhana
+  function handleAIResponse(userMessage) {
+    let response = '';
+    const lowercaseMessage = userMessage.toLowerCase();
+
+    // Rule-based responses
+    if (lowercaseMessage.includes('pelayanan')) {
+        response = 'Kami menyediakan berbagai pelayanan kesehatan seperti konsultasi dokter spesialis, rawat inap, rawat jalan, dan unit gawat darurat 24 jam.';
+    } else if (lowercaseMessage.includes('fasilitas')) {
+        response = 'RS Hasanudin memiliki fasilitas modern termasuk laboratorium, radiologi, apotek, ICU, NICU, dan ruang operasi dengan teknologi terkini.';
+    } else if (lowercaseMessage.includes('jadwal dokter')) {
+        response = 'Anda dapat melihat jadwal dokter spesialis kami di website resmi RS Hasanudin atau menghubungi layanan informasi di nomor 021-12345678.';
+    } else if (lowercaseMessage.includes('biaya')) {
+        response = 'Biaya pelayanan disesuaikan dengan jenis layanan. Silakan konsultasikan dengan bagian administrasi untuk informasi lebih lanjut.';
+    } else {
+        response = 'Maaf, saya tidak mengerti. Bisa lebih spesifik tentang pelayanan atau fasilitas yang Anda tanyakan di RS Hasanudin?';
+    }
+
+    return response;
+}
+
+// Event listener untuk mengirim pesan
+sendChatbotMessage.addEventListener('click', function() {
+    const userMessage = chatbotInput.value.trim();
+    if (userMessage) {
+        addMessage(userMessage, 'user');
+        const aiResponse = handleAIResponse(userMessage);
+        setTimeout(() => {
+            addMessage(aiResponse, 'bot');
+        }, 500);
+        chatbotInput.value = '';
+    }
+});
+
+// Event listener untuk enter di input
+chatbotInput.addEventListener('keypress', function(e) {
+    if (e.key === 'Enter') {
+        sendChatbotMessage.click();
+    }
+});
+
+// Toggle chatbot
+openChatbot.addEventListener('click', function() {
+    chatbotPopup.classList.remove('hidden');
+    openChatbot.style.display = 'none';
+});
+
+closeChatbot.addEventListener('click', function() {
+    chatbotPopup.classList.add('hidden');
+    openChatbot.style.display = 'block';
+});
+
+// Pesan selamat datang
+addMessage('Halo! Ada yang bisa saya bantu terkait pelayanan atau fasilitas di RS Hasanudin?', 'bot');
+});
+</script>
+</body>
+</html>
